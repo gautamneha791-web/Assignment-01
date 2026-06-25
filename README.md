@@ -18,9 +18,7 @@
 - Footer
 
 ## GitHub Repository
-
-(Add your GitHub link here)
+https://github.com/gautamneha791-web/Assignment-01
 
 ## Live Demo
-
-(Add your Netlife link here)
+https://stirring-panda-8f315c.netlify.app/
