@@ -4,31 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TuteDude HTML Learning Demo Page</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body { font-family: Arial; max-width: 900px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
-        header { text-align: center; background: white; padding: 30px; border-radius: 10px; margin-bottom: 20px; }
-        header img { max-width: 200px; }
-        section { background: white; padding: 25px; border-radius: 10px; margin-bottom: 20px; }
-        h2 { color: #ff6b35; border-bottom: 2px solid #ff6b35; padding-bottom: 5px; }
-        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
-        th { background: #ff6b35; color: white; padding: 12px; text-align: left; }
-        td { padding: 10px; border: 1px solid #ddd; }
-        tfoot { background: #ffe5d9; font-weight: bold; }
-        audio, video { width: 100%; margin: 10px 0; }
-        input, textarea { width: 100%; padding: 10px; margin: 8px  0; border: 1px solid #ccc; border-radius: 5px; }
-        button { background: #ff6b35; color: white; padding: 12px 25px; border: none; border-radius: 5px; cursor: pointer; }
-        footer { text-align: center; padding: 20px; background: #333; color: white; border-radius: 10px; }
-        details { background: #fff3cd; padding: 15px; border-radius: 5px; }
-        summary { font-weight: bold; cursor: pointer; }
-    </style>
+    
 </head>
 <body>
     
     <!--Header-->
     <header>
-        <h1>Welcome to TuteDude</h1>
-        <p>A project designed by TuteDude to learn HTML</p>
+        <h1><mark>Welcome to TuteDude</mark></h1>
+        <p>
+            <em>A project designed by</em> 
+            <strong>TuteDude</strong> 
+            to learn HTML
+        </p>
         <nav>
           <ul>
             <li><a href="#about">About</a></li>
@@ -40,23 +27,40 @@
         </nav>
 
         <br>
-
-        <img src="https://images.shiksha.com/mediadata/images/articles/1739779901phpxOdKq8_480x360.jpeg" alt="TuteDude logo" width="700">
-
-        <h2>TuteDude Course</h2>
+        <figure>
+        <img src="https://images.shiksha.com/mediadata/images/articles/1739779901phpxOdKq8_480x360.jpeg" 
+        alt="TuteDude logo" 
+        width="700">
+        
+        <figcaption>
+           TuteDude HTML Learning Platform
+        </figcaption>
+        </figure>
     </header>
 
     <main>
 
         <!--About Section-->
         <section id="about">
-            <h2>About TD</h2>
+         <h2>About TuteDude</h2>
+
+         <article>
+
             <p>
-                Founded in <time datetime="2021-01-01">2021</time>, 
-                this sample project was created by <strong>TuteDude</strong> for learning all major HTML tags.
+               <abbr title="TuteDude">TD</abbr> was founded in
+               <time datetime="2021-01-01">2021</time>.
+               It is an online learning platform that helps students learn
+               <strong>programming and web development</strong>.
             </p>
-            <p>We hope this site will help you master HTML for FREE!</p>
-        </section>
+
+            <blockquote>
+              "Learning is the key to success."
+              <cite>– TuteDude</cite>
+            </blockquote>
+
+         </article>
+
+        </section>  
         
         <!--Menu Section-->
         <section id="menu">
@@ -67,6 +71,7 @@
                     <tr>
                         <th>Category</th>
                         <th>Item</th>
+                        <th>Nutrition</th>
                         <th>Qty</th>
                         <th>Price</th>
                         <th>Total</th>
@@ -75,8 +80,22 @@
 
                 <tbody> 
                         <tr>
-                            <td rowspan="4">TacoBuds</td>
-                            <td>Crunchy (Beef)</td>
+                           <td rowspan="4">TacoBuds</td>
+                           <td>Crunchy (Beef)</td>
+
+                           <td>
+                               <table border="1">
+                                  <tr>
+                                      <th>Calories</th>
+                                      <th>Protein</th>
+                                    </tr>
+                                    <tr>
+                                      <td>350</td>
+                                      <td>20g</td>
+                                    </tr>
+                                </table>
+                            </td>
+
                             <td>1</td>
                             <td>$1.50</td>
                             <td>$1.50</td>
@@ -84,6 +103,7 @@
 
                         <tr>
                             <td>Crunchy (Chicken)</td>
+                            <td>300 Cal</td>
                             <td>2</td>
                             <td>$1.50</td>
                             <td>$3.00</td>
@@ -91,6 +111,7 @@
 
                         <tr>
                             <td>Soft (Beef)</td>
+                            <td>400 Cal</td>
                             <td>3</td>
                             <td>$2.00</td>
                             <td>$6.00</td>
@@ -98,6 +119,7 @@
 
                         <tr>
                             <td>Soft (Chicken)</td>
+                            <td>320 Cal</td>
                             <td>1</td>
                             <td>$2.00</td>
                             <td>$2.00</td>
@@ -106,6 +128,7 @@
                         <tr>
                             <td rowspan="3">Soft TacoBuds</td>
                             <td>Steak</td>
+                            <td>450 Cal</td>
                             <td>2</td>
                             <td>$3.25</td>
                             <td>$6.50</td>
@@ -113,6 +136,7 @@
 
                         <tr>
                             <td>Chicken</td>
+                            <td>340 Cal</td>
                             <td>3</td>
                             <td>$3.00</td>
                             <td>$9.00</td>
@@ -120,6 +144,7 @@
 
                         <tr>
                             <td>Veggie</td>
+                            <td>250 Cal</td>
                             <td>1</td>
                             <td>$2.50</td>
                             <td>$2.50</td>
@@ -128,6 +153,7 @@
                         <tr>
                             <td rowspan="2">Combos</td>
                             <td>Crunchy Combo</td>
+                            <td>700 Cal</td>
                             <td>1</td>
                             <td>$10.00</td>
                             <td>$10.00</td>
@@ -135,6 +161,7 @@
 
                         <tr>
                             <td>Soft Combo</td>
+                            <td>750 Cal</td>
                             <td>1</td>
                             <td>$12.00</td>
                             <td>$12.00</td>
@@ -143,11 +170,11 @@
 
                 <tfoot>
                     <tr>
-                        <td colspan="4">Total</td>
+                        <td colspan="5">Total</td>
                         <td>$52.50</td>
                     </tr>
                     <tr>
-                        <td colspan="4">Average Meal Price</td>
+                        <td colspan="5">Average Meal Price</td>
                         <td>$10.50</td>
                     </tr>
                 </tfoot>
@@ -178,8 +205,9 @@
 
             <h3>Watch Taco Video</h3>
 
-            <video controls poster="hhtps://via.placeholder.com/640x360/333/fff?text=Taco+Video">
+            <video controls>
                 <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
             </video>
         </section>
         
@@ -198,8 +226,15 @@
                     <label for="email">Email:</label>
                     <input id="email" type="email" required>
 
+                    <label for="course">Select Course:</label>
+                    <select id="course">
+                       <option>HTML</option>
+                       <option>CSS</option>
+                       <option>JavaScript</option>
+                    </select>
+
                     <label for="message">Your Message:</label>
-                    <textarea idd="message" rows="4" placeholder="Type here..."></textarea>
+                    <textarea id="message" rows="4" placeholder="Type here..."></textarea>
                 </fieldset>
 
                 <br>
@@ -217,10 +252,17 @@
             TacoBuds<br>
             123 Main St<br>
             Lucknow, UP 226001<br>
-            Email:support@tutedude.com
+            Email:
+            <a href="mailto:support@tutedude.com">
+                support@tutedude.com
+            </a>
         </address>
 
-        <p>copyright &copy; <time datetime="2026">2026</time>TuteDude. All Rights Reserved.</p>
+        <p>
+            copyright &copy; 
+           <time datetime="2026">2026</time>
+           TuteDude. All Rights Reserved.
+        </p>
     </footer>
     
 </body>
